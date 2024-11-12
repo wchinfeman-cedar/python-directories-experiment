@@ -3,6 +3,9 @@ The point of this repository is to illustrate how we can get into "flaky" situat
 The situation is:
 
 `left_package.lower -> right_package.right`
+
+while
+
 `right_package.right -> left_package.upper`
 
 This means that *at a package level*, there is a circular dependency.  But with respect to individual modules, there is not a circular dependency.
